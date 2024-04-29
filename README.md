@@ -2,6 +2,7 @@
 
 # Task 1: `watcher.sh` 
 Implement a "big red button" for UpCommerce by creating a bash script to monitor the Kubernetes deployment dedicated to the Swype microservice defined in swype-deployment.yml. The script should be written in the empty watcher.sh file in the task repo, and trigger if the pod restarts due to network failure more than three times. Here's an optional, pseudocode hint of the tasks your watcher.sh file should perform:
+
 1. Define Variables: Set the namespace, deployment name, and maximum number of restarts allowed before scaling down the deployment.
 2. Start a Loop: Begin an infinite loop that will continue until explicitly broken.
 3. Check Pod Restarts: Within the loop, use the kubectl get pods command to retrieve the number of restarts of the pod associated with the specified deployment in the specified namespace.
@@ -14,9 +15,10 @@ Implement a "big red button" for UpCommerce by creating a bash script to monitor
 ![](./assets/run-watcher.png)
 
 See logs output:
+
 ![](./assets/run-watcher-logging.png)
 
-# Task 2: `watcher.sh` 
+# Task 2: `Tools for Reducing Toil` 
 Identify potential solutions or products, whether free or commercial, to address the toil in the ticketing system. These solutions should aim to mitigate issues such as recurring obsolete alerts and lack of prioritization. Create a markdown file and fill these solutions in your markdown file (feel free to use your repo's README.md file for this task).
 
 - Tool 1: Jira
